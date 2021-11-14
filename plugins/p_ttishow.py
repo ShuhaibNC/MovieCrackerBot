@@ -37,12 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🐌 Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('🎬 MovieCracker', url='https://t.me/MovieCrackerLinks')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>Thanks For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about ask to Shuhaib</b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
