@@ -43,7 +43,7 @@ async def start(client, message):
             InlineKeyboardButton('🎬 MovieCracker', url='https://t.me/MovieCrackerLinks')
             ],[
             InlineKeyboardButton('🌆 Help', callback_data='help'),
-            InlineKeyboardButton('ℹ️ About', callback_data='about')
+            InlineKeyboardButton('💠 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -84,7 +84,7 @@ async def start(client, message):
             InlineKeyboardButton('🎬 MovieCracker', url='https://t.me/MovieCrackerLinks')
             ],[
             InlineKeyboardButton('🌆 Help', callback_data='help'),
-            InlineKeyboardButton('ℹ️ About', callback_data='about')
+            InlineKeyboardButton('💠 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
