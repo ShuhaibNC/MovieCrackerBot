@@ -1,5 +1,5 @@
 {
-    "name": "EvaMariaBot",
+    "name": "MovieCrackerBot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "website": "https://github.com/ShuhaibNC/MovieCrackerBot",
+    "repository": "https://github.com/ShuhaibNC/MovieCrackerBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
