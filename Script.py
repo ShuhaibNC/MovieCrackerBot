@@ -3,12 +3,17 @@ class script(object):
 𝙸'𝙼 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙻𝙾𝚃'𝚂 𝙾𝙵 𝚁𝙰𝚁𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 🎬 & 𝚂𝙴𝚁𝙸𝙴𝚂 📺 , 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 🚀</b>"""
     HELP_TXT = """<b>Hey {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    ABOUT_TXT = """<b>🤖 𝙱𝙾𝚃 𝙽𝙰𝙼𝙴: M𝙾𝚅𝙸𝙴C𝚁𝙰𝙲𝙺𝙴𝚁 B𝙾𝚃
-👨🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : 𝚂𝙷𝚄𝙷𝙰𝙸𝙱 𝙽 𝙲
-🐲 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-📚 𝙼𝙾𝙳𝚄𝙻𝙴 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-⚙️ 𝙷𝙾𝚂𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-🔢 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: v3.2.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
+    ABOUT_TXT = """<b>🤖 ʙᴏᴛ ɴᴀᴍᴇ : <a href=https://t.me/MovieCrackerBot>ᴍᴏᴠɪᴇᴄʀᴀᴄᴋᴇʀ ʙᴏᴛ</a>
+
+👨🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ  : <a href=https://t.me/ShuhaibNC>sʜᴜʜᴀɪʙ ɴ ᴄ</a>
+
+🐲 ʟᴀɴɢᴜᴀɢᴇ: <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ 3</a>
+
+📚 ᴍᴏᴅᴜʟᴇ : <a href="https://github.com/pyrogram/pyrogram">ᴘʏʀᴏɢʀᴀᴍ</a>
+
+⚙️ ʜᴏsᴛ sᴇʀᴠᴇʀ : <a href=http://heroku.com/>ʜᴇʀᴏᴋᴜ</a>
+
+#️⃣ ᴠᴇʀsɪᴏɴ : ᴠ3.2.1 [ ʙᴇᴛᴀ ]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - MovieCrackerBot is not a open source project.
 <b>DEVS:
@@ -89,10 +94,14 @@ This module only works for my admins
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """<b>📁 ᴛᴏᴛᴀʟ ꜰɪʟᴇs : <code>{}</code>
-👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code>
-👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code>
-⚙️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code> MB
-🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code> MB</b>"""
+
+👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs : {}
+
+👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : {}
+
+⚙️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : {}
+
+🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ : {}</b>"""
     LOG_TEXT_G = """#NewGroup
 <b>👨‍👦‍👦 ɢʀᴏᴜᴘ = {}(<code>{}</code>)
 👥 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = <code>{}</code>
