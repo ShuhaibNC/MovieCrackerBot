@@ -1,19 +1,18 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙻𝙾 {},
-𝙸'𝙼 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙻𝙾𝚃'𝚂 𝙾𝙵 𝚁𝙰𝚁𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 🎬 & 𝚂𝙴𝚁𝙸𝙴𝚂 📺 , 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 🚀"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """𝙽𝙰𝙼𝙴: 𝙼𝙾𝚅𝙸𝙴𝙲𝚁𝙰𝙲𝙺𝙴𝚁 𝙱𝙾𝚃
-➤ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 𝚂𝙷𝚄𝙷𝙰𝙸𝙱 𝙽 𝙲
-➤ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-➤ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-➤ 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾𝙳𝙱
-➤ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-➤ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+    START_TXT = """<b>Hello {},
+𝙸'𝙼 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙻𝙾𝚃'𝚂 𝙾𝙵 𝚁𝙰𝚁𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 🎬 & 𝚂𝙴𝚁𝙸𝙴𝚂 📺 , 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 🚀</b>"""
+    HELP_TXT = """<b>Hey {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
+    ABOUT_TXT = """<b>🤖 𝙱𝙾𝚃 𝙽𝙰𝙼𝙴: M𝙾𝚅𝙸𝙴C𝚁𝙰𝙲𝙺𝙴𝚁 B𝙾𝚃
+👨🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : 𝚂𝙷𝚄𝙷𝙰𝙸𝙱 𝙽 𝙲
+🐲 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
+📚 𝙼𝙾𝙳𝚄𝙻𝙴 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
+⚙️ 𝙷𝙾𝚂𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
+🔢 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: v3.2.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - MovieCrackerBot is not a open source project.
-<b>DEVS:</b>
-- @𝚂𝙷𝚄𝙷𝙸𝙱𝙽𝙲"""
+<b>DEVS:
+- @𝚂𝙷𝚄𝙷𝙰𝙸𝙱𝙽𝙲</b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
@@ -89,17 +88,17 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+    STATUS_TXT = """<b>📁 ᴛᴏᴛᴀʟ ꜰɪʟᴇs : <code>{}</code>
+👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code>
+👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code>
+⚙️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code> MB
+🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code> MB</b>"""
     LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
-"""
+<b>👨‍👦‍👦 ɢʀᴏᴜᴘ = {}(<code>{}</code>)
+👥 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = <code>{}</code>
+🚶‍♂️ᴀᴅᴅᴇᴅ ʙʏ - {}
+</b>"""
     LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
+🆔 ID - <code>{}</code>
+📛 Name - {}
 """
