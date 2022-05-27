@@ -3,7 +3,7 @@ class script(object):
 
 𝙸'𝙼 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙻𝙾𝚃'𝚂 𝙾𝙵 𝚁𝙰𝚁𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 🎬 & 𝚂𝙴𝚁𝙸𝙴𝚂 📺 , 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 🚀
 
-Maintained BY @MovieCrackerLinks ❤️"""
+Maintained BY @MovieCrackerLinks ❤️</b>"""
     HELP_TXT = """<b>Hey {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     ABOUT_TXT = """<b>🤖 ʙᴏᴛ ɴᴀᴍᴇ : <a href=https://t.me/MovieCrackerBot>ᴍᴏᴠɪᴇᴄʀᴀᴄᴋᴇʀ ʙᴏᴛ</a>
