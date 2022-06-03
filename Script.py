@@ -96,7 +96,7 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """<b>📁 ᴛᴏᴛᴀʟ ꜰɪʟᴇs : <code>{}</code>
+    STATUS_TXT = """<b>📁 ᴛᴏᴛᴀʟ ꜰɪʟᴇs : {}
 
 👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs : {}
 
@@ -106,11 +106,11 @@ This module only works for my admins
 
 🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ : {}</b>"""
     LOG_TEXT_G = """#NewGroup
-<b>👨‍👦‍👦 ɢʀᴏᴜᴘ = {}(<code>{}</code>)
-👥 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = <code>{}</code>
+<b>👨‍👦‍👦 ɢʀᴏᴜᴘ = {}({})
+👥 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = {}
 🚶‍♂️ᴀᴅᴅᴇᴅ ʙʏ - {}
 </b>"""
-    LOG_TEXT_P = """#NewUser
-🆔 ID - <code>{}</code>
-📛 Name - {}
-"""
+    LOG_TEXT_P = """<b>#NewUser
+👥 ɪᴅ - {}
+🏷️ ɴᴀᴍᴇ - {}
+</b>"""
