@@ -78,7 +78,14 @@ these are the extra features of MovieCrackerBot
 • /id - <code>get id of a specifed user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+• /search  - <code>get the film information from various sources.</code>
+• /help - <code>for help</code>
+• /ping - <code>to check ping</code>
+• /alive - <code>to check if i'm Alive</code>
+• /movie - <code>movie search guide</code>
+• /series - <code>series search guide</code>
+• /pass - <code>generate strong and easily rememberable password</code>
+"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
