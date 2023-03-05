@@ -20,27 +20,27 @@ async def showid(client, message):
         username = message.from_user.username
         dc_id = message.from_user.dc_id or ""
         await message.reply_text(
-            f"<b>➲ First Name:</b> {first}\n<b>➲ Last Name:</b> {last}\n<b>➲ Username:</b> {username}\n<b>➲ Telegram ID:</b> <code>{user_id}</code>\n<b>➲ Data Centre:</b> <code>{dc_id}</code>",
+                f"<b>ꜰɪʀꜱᴛɴᴀᴍᴇ: </b> {first}\n<b>ʟᴀꜱᴛɴᴀᴍᴇ: </b> {last}\n<b>ᴜꜱᴇʀɴᴀᴍᴇ: </b> {username}\n<b>ɪᴅ: </b> <code>{user_id}</code>\n<b>ᴅᴀᴛᴀᴄᴇɴᴛᴇʀ: </b> <code>{dc_id}</code>",
             quote=True
         )
 
     elif chat_type in ["group", "supergroup"]:
         _id = ""
         _id += (
-            "<b>➲ Chat ID</b>: "
+                "<b>ᴄʜᴀᴛ ɪᴅ: </b>: "
             f"<code>{message.chat.id}</code>\n"
         )
         if message.reply_to_message:
             _id += (
-                "<b>➲ User ID</b>: "
+                    "<b>ᴜꜱᴇʀ ɪᴅ:</b>: "
                 f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
-                "<b>➲ Replied User ID</b>: "
+                "<b>ʀᴇᴩʟɪᴇᴅ ᴜꜱᴇʀ ɪᴅ: </b>: "
                 f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'Anonymous'}</code>\n"
             )
             file_info = get_file_id(message.reply_to_message)
         else:
             _id += (
-                "<b>➲ User ID</b>: "
+                    "<b>ᴜꜱᴇʀ ɪᴅ: </b>: "
                 f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
             )
             file_info = get_file_id(message)
@@ -58,10 +58,10 @@ async def showid(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`Fetching user info...`"
+        "`Fetching user info... 🌚`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "`Processing user info... ✨️`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -130,7 +130,7 @@ async def who_is(client, message):
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
     if ' ' in message.text:
-        k = await message.reply('Searching ImDB')
+        k = await message.reply('Searching in IMDB')
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
