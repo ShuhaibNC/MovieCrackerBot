@@ -3,6 +3,7 @@ import random
 from pyrogram import Client, filters
 from requests import get
 import json
+import string
 
 CMD = ["/", "."]
 
@@ -30,26 +31,19 @@ async def tutorial(_, message):
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
     start_t = time.time()
-    rm = await message.reply_text("Ping.....")
+    rm = await message.reply_text("Ping....")
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"𝖯ong!\n{time_taken_s:.3f} ms")
     
-@Client.on_message(filters.command("covid", CMD))
-async def covid(_, message):
-    fetch = get(f'https://coronavirus-tracker-api.herokuapp.com/all')
-
-    if fetch.status_code == 200:
-        usr = fetch.json()
-        data = fetch.text
-        parsed = json.loads(data)
-        total_confirmed_global = parsed["latest"]["confirmed"]
-        total_deaths_global = parsed["latest"]["deaths"]
-        total_recovered_global = parsed["latest"]["recovered"]
-        active_cases_covid19 = total_confirmed_global - total_deaths_global - total_recovered_global
-        reply_txt = ("*Corona Stats🦠:*\n"
-        "Total Confirmed: `" + str(total_confirmed_global) + "`\n"
-        "Total Deaths: `" + str(total_deaths_global) + "`\n"
-        "Total Recovered: `" + str(total_recovered_global) +"`\n"
-        "Active Cases: `"+ str(active_cases_covid19) + "`")
-        await message.reply_text(reply_txt)
+@Client.on_message(filters.command("pass", CMD))
+async def pass_gen(_, message):
+    ps = await message.reply_text("Creating password....")
+    adjresp = get("https://gist.githubusercontent.com/hugsy/8910dc78d208e40de42deb29e62df913/raw/eec99c5597a73f6a9240cab26965a8609fa0f6ea/english-adjectives.txt")
+    adj = random.choice(adjresp.text.split('\n'))
+    nounresp = get("https://raw.githubusercontent.com/hugsy/stuff/main/random-word/english-nouns.txt")
+    noun = random.choice(nounresp.text.split("\n"))
+    num = str(random.randrange(100))
+    punct = random.choice(string.punctuation)
+    passw = adj + noun + num + punct
+    await ps.edit(f"💬 Your Password is: {passw}\n\nPress /pass to Regenerate Password")
