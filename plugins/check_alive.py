@@ -52,4 +52,4 @@ async def covid(_, message):
         "Total Deaths: `" + str(total_deaths_global) + "`\n"
         "Total Recovered: `" + str(total_recovered_global) +"`\n"
         "Active Cases: `"+ str(active_cases_covid19) + "`")
-    await message.reply_text(reply_txt)
+        await message.reply_text(reply_txt)
