@@ -1,6 +1,8 @@
 import time
 import random
 from pyrogram import Client, filters
+from requests import get
+import json
 
 CMD = ["/", "."]
 
@@ -32,3 +34,22 @@ async def ping(_, message):
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"𝖯ong!\n{time_taken_s:.3f} ms")
+    
+@Client.on_message(filters.command("covid", CMD))
+async def covid(_, message):
+    fetch = get(f'https://coronavirus-tracker-api.herokuapp.com/all')
+
+    if fetch.status_code == 200:
+        usr = fetch.json()
+        data = fetch.text
+        parsed = json.loads(data)
+        total_confirmed_global = parsed["latest"]["confirmed"]
+        total_deaths_global = parsed["latest"]["deaths"]
+        total_recovered_global = parsed["latest"]["recovered"]
+        active_cases_covid19 = total_confirmed_global - total_deaths_global - total_recovered_global
+        reply_text = ("*Corona Stats🦠:*\n"
+        "Total Confirmed: `" + str(total_confirmed_global) + "`\n"
+        "Total Deaths: `" + str(total_deaths_global) + "`\n"
+        "Total Recovered: `" + str(total_recovered_global) +"`\n"
+        "Active Cases: `"+ str(active_cases_covid19) + "`")
+    await message.reply_text(reply_text)
