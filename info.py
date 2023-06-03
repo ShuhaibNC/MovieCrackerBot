@@ -35,7 +35,7 @@ CUSTOM_FILE_CAPTION = """
 
 <b>Join ➠➠ [@MovieCracker](https://t.me/MovieCrackerLinks)</b>
 """
-PICS = "https://telegra.ph/file/0f287c503ebb3f95c8f12.jpg"
+PICS = "https://raw.githubusercontent.com/ShuhaibNC/MovieCrackerBot/master/IMG_20230603_122555_814.jpg"
 P_TTI_SHOW_OFF = True
 SINGLE_BUTTON = True
 SPELL_CHECK_REPLY = True
