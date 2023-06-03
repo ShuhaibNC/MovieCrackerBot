@@ -16,6 +16,7 @@ LOG_CHANNEL = '-1001943920731'
 ADMINS = [908673468]
 CHANNELS = ['@tgcrackerfiles']
 AUTH_USERS = []
+AUTH_GROUPS = None
 AUTH_CHANNEL = '-1001598825315'
 
 # MongoDB information
