@@ -17,7 +17,7 @@ ADMINS = [908673468]
 CHANNELS = ['@tgcrackerfiles']
 AUTH_USERS = []
 AUTH_GROUPS = None
-AUTH_CHANNEL = '-1001598825315'
+AUTH_CHANNEL = int('-1001598825315')
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://shuhaibnc:Shuhaib123@cluster0.jauwz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
