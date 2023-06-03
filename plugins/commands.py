@@ -3,7 +3,7 @@ import logging
 import random
 import asyncio
 from Script import script
-from pyrogram import Client, filters, enums
+from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
@@ -52,11 +52,9 @@ async def start(client, message):
         thunder = await message.reply('⚡')
         await asyncio.sleep(2)
         await thunder.delete()
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply(script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML)
+            parse_mode='html')
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -95,11 +93,9 @@ async def start(client, message):
         thunder = await message.reply('⚡')
         await asyncio.sleep(2)
         await thunder.delete()
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply(script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML)
+            parse_mode='html')
         return
     file_id = message.command[1]
     files_ = await get_file_details(file_id)
