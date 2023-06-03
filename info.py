@@ -22,7 +22,11 @@ AUTH_CHANNEL = '-1001598825315'
 DATABASE_URI = "mongodb+srv://shuhaibnc:Shuhaib123@cluster0.jauwz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 DATABASE_NAME = 'Cluster0'
 COLLECTION_NAME = 'Telegram_files'  # If you are using the same database, then use different collection name for each bot
-
+IMDB_TEMPLATE = """
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)"""
 CUSTOM_FILE_CAPTION = """
 <b>📝 File Name:</b> <code>{file_name}</code> 
 
