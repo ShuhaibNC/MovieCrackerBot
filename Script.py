@@ -69,22 +69,25 @@ Maintained BY @MovieCrackerLinks ❤️</b>"""
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    EXTRAMOD_TXT = """<b>EXTRA FEATURES 🐲</b>
 
-<b>NOTE:</b>
-these are the extra features of MovieCrackerBot
+<b>Developer : @ShuhaibNC 🌌✨🌚 :</b>
 
-<b>Commands and Usage:</b>
-• /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>
-• /help - <code>for help</code>
-• /ping - <code>to check ping</code>
-• /alive - <code>to check if i'm Alive</code>
-• /movie - <code>movie search guide</code>
-• /series - <code>series search guide</code>
-• /pass - <code>generate strong and easily rememberable password</code>
+• /msone - <code>search subtitles in msone website 📜</code>
+• /thanos - <code>get random thanos quote 💜</code>
+• /emoji - <code>covert emoji into image 😶‍🌫️</code>
+• /emix - <code>mix 2 emojis together</code>
+• /movie - <code>movie search guide 🎬</code>
+• /series - <code>series search guide 📺</code>
+• /pass - <code>generate strong and easily rememberable password 🔑</code>
+
+• /id - <code>get id of a specifed user 👥</code>
+• /help - <code>for help ❓</code>
+• /ping - <code>to check ping 🚄</code>
+• /alive - <code>to check if i'm Alive 🧞</code>
+• /info  - <code>get information about a user. ℹ️</code>
+• /imdb  - <code>get the film information from IMDb source. 🐟</code>
+• /search  - <code>get the film information from various sources. 🐠</code>
 """
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
