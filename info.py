@@ -27,7 +27,12 @@ IMDB_TEMPLATE = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)"""
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+☀️ Languages : <code>{languages}</code>
+👥 Cast : <code>{cast}</code>
+📀 RunTime: {runtime} Minutes
+📆 Release Info : {release_date}
+🎛 Countries : <code>{countries}</code>"""
 CUSTOM_FILE_CAPTION = """
 <b>📝 File Name:</b> <code>{file_name}</code> 
 
