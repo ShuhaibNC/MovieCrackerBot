@@ -18,10 +18,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇᴄʀᴀᴄᴋᴇʀ', url='https://t.me/MovieCrackerLinks')
+                InlineKeyboardButton('🎬 MovieCracker ', url='https://t.me/MovieCrackerLinks')
             ],
             [
-                InlineKeyboardButton('🌆 ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🌆 Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -37,13 +37,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇᴄʀᴀᴄᴋᴇʀ', url='https://t.me/MovieCrackerLinks')
+            InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🎬 MovieCracker', url='https://t.me/MovieCrackerLinks')
             ],[
-            InlineKeyboardButton('🌆 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('💠 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🌆 Help', callback_data='help'),
+            InlineKeyboardButton('❤️‍🩹 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -59,13 +59,13 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🐲 ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
+                    "🐲 Channel", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton("⚙️ ʀᴇғʀᴇsʜ", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("⚙️ Refresh", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**ʏᴏᴜ ꜱʜᴏᴜʟᴅ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ!**",
@@ -75,13 +75,13 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇᴄʀᴀᴄᴋᴇʀ', url='https://t.me/MovieCrackerLinks')
+            InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🎬 MovieCracker', url='https://t.me/MovieCrackerLinks')
             ],[
-            InlineKeyboardButton('🌆 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('💠 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🌆 Help', callback_data='help'),
+            InlineKeyboardButton('❤️‍🩹 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         thunder = await message.reply('⚡')
