@@ -53,7 +53,6 @@ async def start(client, message):
         await asyncio.sleep(2)
         await thunder.delete()
         await message.reply_photo(
-            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -97,7 +96,6 @@ async def start(client, message):
         await asyncio.sleep(2)
         await thunder.delete()
         await message.reply_photo(
-            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
