@@ -3,6 +3,7 @@ import logging
 import random
 import asyncio
 from Script import script
+from pyrogram.enums.ParseMode
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -71,7 +72,7 @@ async def start(client, message):
             chat_id=message.from_user.id,
             text="**ʏᴏᴜ ꜱʜᴏᴜʟᴅ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ!**",
             reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode="markdown"
+            parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
@@ -90,7 +91,7 @@ async def start(client, message):
         await thunder.delete()
         await message.reply(script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html')
+            parse_mode=enums.ParseMode.HTML)
         return
     file_id = message.command[1]
     files_ = await get_file_details(file_id)
