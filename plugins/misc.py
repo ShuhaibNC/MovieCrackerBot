@@ -219,7 +219,7 @@ async def who_is(client, message):
             quote=True,
             reply_markup=reply_markup,
             caption=message_out_str,
-            parse_mode="html",
+            parse_mode=ParseMode.HTML,
             disable_notification=True
         )
         os.remove(local_user_photo)
@@ -232,7 +232,7 @@ async def who_is(client, message):
             text=message_out_str,
             reply_markup=reply_markup,
             quote=True,
-            parse_mode="html",
+            parse_mode=ParseMode.HTML,
             disable_notification=True
         )
     await status_message.delete()
